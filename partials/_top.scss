@@ -1,0 +1,13 @@
+@use "variables";
+@use "sass:color";
+@use 'mixins/text';
+
+.top-picks {
+    background: color.adjust(variables.$primary, $whiteness: 5%); 
+    &__title{
+        color: white;
+    }
+    &__desc{
+        @include text.small-cap;
+    }
+}
